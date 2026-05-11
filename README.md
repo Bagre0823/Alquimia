@@ -8,7 +8,7 @@ DESARROLLO:
 - Herramientas externas como Bootstrap para el diseño responsive, Google Fonts para mejorar la tipografía y Font Awesome para incorporar íconos.
 
 - Archivo CSS externo, aplicando reset básico y definiendo estilos generales para textos y contenedores.
-- Uso de Flexbox para la alineación, organización y distribución prolija y flexible de los elementos.
+- Uso de Flexbox para la alineación, organización, distribución prolija y flexible de los elementos.
 - Generación de tarjetas reutilizables incluyendo imagen, título, descripción y botón.
 - Se aplicaron mejoras para mantener consistencia visual y asegurar que todos los elementos se adapten correctamente al contenido.
 - Diseño responsive mediante el uso de media queries, ajustando tamaños, distribución y visibilidad de elementos en pantallas más pequeñas. Permite una mejora visual para el usuario.
