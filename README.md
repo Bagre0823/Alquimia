@@ -4,7 +4,7 @@ DESCRIPCIÓN:
 
 DESARROLLO:
 - Estructura base en HTML, organizando el contenido en secciones claras: encabezado, introducción, productos, recursos y pie de página.
-- Utilización de eitquetas para mejorar la organización y la legibilidad del código.
+- Utilización de etiquetas para mejorar la organización y la legibilidad del código.
 - Herramientas externas como Bootstrap para el diseño responsive, Google Fonts para mejorar la tipografía y Font Awesome para incorporar íconos.
 
 - Archivo CSS externo, aplicando reset básico y definiendo estilos generales para textos y contenedores.
