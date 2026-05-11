@@ -1,0 +1,355 @@
+/* ================= RESET ================= */
+* {
+    margin: 0; /* elimina márgenes por defecto */
+    padding: 0; /* elimina padding por defecto */
+    box-sizing: border-box; /* incluye padding y border en el tamaño total */
+}
+
+/* ================= VARIABLES ================= */
+:root {
+    --color-principal: #FAB000; /* color principal */
+    --color-secundario: #E99D7E; /* color secundario */
+    --color-texto: #111; /* texto oscuro */
+    --color-texto-suave: #555; /* texto más claro */
+    --color-fondo: #FDFAFA; /* fondo general */
+    --gris-medio: #949292; /* gris intermedio */
+    --gris-oscuro: #333; /* gris oscuro */
+}
+
+/* ================= FUENTES ================= */
+@font-face {
+    font-family: 'MiFuente'; /* nombre de la fuente */
+    src: url('fonts/copperplategothic_bold.ttf'); /* ruta del archivo */
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* fuente base */
+    background-color: var(--color-fondo);
+    color: #222; /* color de texto */
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: sticky; /* queda fijo al hacer scroll */
+    top: 0; /* pegado arriba */
+    z-index: 999; /* por delante de los otros elementos */
+    background-color: var(--color-fondo);
+}
+
+.contenedor-header {
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+    padding: 20px 80px; /* espacio interno */
+}
+
+.contenedor-header img {
+    max-width: 500px; /* tamaño máximo */
+    width: 100%; /* para el responsive */
+}
+
+/* ================= NAVBAR ================= */
+.navbar-custom {
+    background-color: #dddbdb;
+}
+
+.navbar-nav {
+    display: flex; /* flexbox */
+    justify-content: center; /* centra los elementos */
+    width: 100%; /* ocupa todo el ancho */
+}
+
+.nav-item {
+    margin: 0 15px; /* separación entre items */
+}
+
+.nav-link {
+    text-transform: uppercase; /* pone el texto en mayúsculas */
+    font-weight: 550; /* grosor */
+    color: var(--gris-oscuro); 
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #226786; /* color al pasar mouse */
+}
+
+.navbar-toggler {
+    margin-right: auto; /* posiciona botón hamburguesa */
+}
+
+/* ================= DESCRIPCIÓN PRINCIPAL ================= */
+.descripcionPpal {
+    background: url('img/BannerBebidasArt2.png') no-repeat top 5% center/cover; /* imagen fondo */
+    display: flex; /* layout flex */
+    align-items: center; /* centra vertical */
+    justify-content: space-between; /* alinea los elemontos */
+    flex-wrap: wrap; /* permite múltiples líneas responsive */
+    gap: 30px; /* espacio entre elementos */
+    height: 60vh; /* altura relativa */
+    min-height: 400px; /* altura mínima */
+    padding: 0 60px; /* espacio lateral */
+    margin-bottom: 40px; /* separación inferior */
+}
+
+.descripcionPpal-contenedor {
+    flex: 1;
+    min-width: 280px; /* ancho mínimo */
+    display: flex;
+    flex-direction: column; /* alinea vertical */
+    align-items: flex-end; /* alinea a la derecha */
+    text-align: right; /* texto a la derecha */
+}
+
+/* títulos */
+.descripcionPpal-contenedor h1,
+.descripcionPpal-contenedor h2,
+.descripcionPpal-contenedor h4 {
+    font-weight: 700; /* negrita */
+}
+
+.descripcionPpal-contenedor h4 {
+    color: var(--color-texto-suave);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.descripcionPpal-contenedor h2 {
+    color: var(--color-secundario);
+}
+
+.descripcionPpal-contenedor h1 {
+    color: var(--color-principal);
+    font-size: 3rem; /* tamaño grande */
+    margin-bottom: 15px;
+}
+
+.descripcionPpal-contenedor p {
+    color: var(--color-texto-suave);
+    font-size: 1.3rem;
+    font-weight: 700; 
+    margin-bottom: 20px; /* separación */
+    text-transform: uppercase; /* mayúsculas */
+}
+
+.bloque-texto {
+    flex: 2; /* ocupa más espacio */
+    min-width: 300px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* separación interna de los elementos */
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 25px 35px; /* espacio interno */
+    border-radius: 10px; /* bordes redondeados */
+    border: 1px solid rgba(26, 25, 25, 0.4);
+}
+
+.bloque-texto h2 {
+    color: var(--color-texto);
+}
+
+.bloque-texto p {
+    color: var(--color-texto);
+    line-height: 1.5; /* espacio entre lineas */
+}
+
+/* FEATURES */
+.features {
+    display: flex; 
+    flex-wrap: wrap; /* múltiples líneas */
+    gap: 10px 15px;
+    color: var(--color-texto);
+}
+
+/* ================= SEPARADORES ================= */
+.texto-centro {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto; /* centrado */
+    text-align: center;
+}
+
+.texto-centro p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #727171;
+}
+
+.texto-centro strong {
+    font-weight: 700;
+    color: var(--gris-oscuro);
+}
+
+.contenedor {
+    width: 90%; /* ancho adaptable */
+    max-width: 1200px; /* límite */
+    margin: 0 auto; /* centrado */
+}
+
+.separador {
+    display: flex; 
+    align-items: center; /* centra vertical */
+    justify-content: center; /* centra horizontal */
+    margin: 30px 0;
+}
+
+.separador::before,
+.separador::after {
+    content: ""; /* pseudo-elemento */
+    flex: 1; /* ocupa un espacio */
+    border-bottom: 2px solid var(--gris-medio); /* dibuja línea de separacion */
+}
+
+.separador i {
+    font-size: 20px; /* tamaño para el icono copa */
+    color: var(--gris-medio);
+}
+
+.separador span {
+    margin: 0 15px; /* separación del ícono */
+    display: flex;
+    align-items: center;
+}
+
+/* ================= PRODUCTOS ================= */
+.contenedorTarjeta {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 2rem;
+}
+
+.tarjetas {
+    display: flex; 
+    flex-wrap: wrap; /* permite bajar los elementos */
+    justify-content: center; /* centra */
+    gap: 20px; /* separación entre elementos*/
+}
+
+.tarjeta {
+    width: 300px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* vertical */
+    justify-content: space-between; /* distribuye contenido */
+}
+
+.tarjeta-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 120px;
+    border-radius: 5%;
+    border: 3px solid #eeeef3;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.tarjeta-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tarjeta-descripcion {
+    font-size: 0.88rem;
+    color: #4b5563;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1; /* ocupa espacio disponible */
+}
+
+/* BOTÓN */
+.btnCarrito {
+    display: flex;
+    align-items: center; /* centra vertical */
+    justify-content: center; /* centra horizontal */
+    gap: 8px; /* espacio icono-texto */
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: var(--color-principal);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none; /* sin subrayado */
+    letter-spacing: 0.5px;
+    transition: 0.3s; /* animación */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* sombra al texto del boton */
+}
+
+.btnCarrito:hover {
+    background-color: var(--color-secundario); /* cambio de color */
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+    .navbar-nav {
+        align-items: center; /* centra vertical */
+    }
+
+    .nav-item {
+        margin: 0; /* elimina separación lateral */
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 1px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .descripcionPpal {
+        flex-direction: column; /* pasa a vertical */
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .descripcionPpal-contenedor {
+        align-items: center; /* centra contenido */
+        text-align: center;
+    }
+
+    .bloque-texto {
+        max-width: 100%;
+    }
+}
+
+/* Mobile chico */
+@media (max-width: 576px) {
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+}

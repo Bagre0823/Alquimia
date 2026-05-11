@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome: librería de íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap primero -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS después -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .footer {
+            background-color: #5a5959;
+            color: white;
+            padding: 30px 20px;
+            width: 100%;
+        }
+
+        .footer-contenedor {
+            display: flex;
+            justify-content: space-around;
+            /* alinea los bloques en el contenedor */
+            align-items: flex-start;
+            flex-wrap: wrap;
+            /* para responsive baja los elementos*/
+            text-align:left;
+        }
+
+        .footer-bloque {
+            flex: 1; /* distribuye los flex - como primer elemento */
+            min-width: 300px;
+            padding: 0 0 0 30px;
+        }
+
+        .footer-bloque h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer-bloque p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* ================= FOOTER RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .footer-contenedor {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-bloque {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <title>Licores Artesanales</title>
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+
+        <!-- Logo -->
+        <div class="contenedor-header">
+            <img src="img/LogoGris2.png" alt="Logo Licores Artesanales" loading="lazy">
+        </div>
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Servicios / Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ==================== SECCION 1 - DESCRIPCIÓN PRINCIPAL ==================== -->
+    <section class="descripcionPpal" aria-label="Presentación del emprendimiento">
+
+        <div class="bloque-texto sombra-texto">
+            <h2>Cada botella cuenta una historia</h2>
+
+            <p>
+                Somos un emprendimiento familiar que hace licores artesanales con dedicación y mucho cariño. <br>
+                Cuidamos cada detalle, desde la elección de los ingredientes hasta el producto final.<br>
+                Nos gusta compartir lo que hacemos, porque creemos en los sabores simples y en los momentos que se
+                disfrutan
+                en buena compañía.<br>
+                Cada botella lleva un poco de nuestra historia.
+            </p>
+
+            <div class="features">
+                <span>🍃 Ingredientes naturales</span>
+                <span>🧪 Producción artesanal</span>
+                <span>🕰️ Proceso cuidado / añejamiento</span>
+                <span>🎁 Presentación premium</span>
+                <span>🌎 Identidad local</span>
+            </div>
+
+        </div>
+
+        <div class="descripcionPpal-contenedor">
+            <h4 class="sombra-texto">“Hecho como en casa, pensado para vos”</h4>
+            <h2 class="borde-texto">Date un gusto artesanal</h2>
+            <h1 class="borde-texto">En todo lo que hacemos</h1>
+            <p class="sombra-texto">Un brindis artesanal con beneficios para vos</p>
+        </div>
+
+    </section>
+
+    <!-- ==================== SECCION 2 - SEPARADORES ==================== -->
+    <section>
+        <div class="contenedor">
+            <div class="texto-centro">
+                <p>
+                    <strong>ALQUIMIA LICORERA</strong>, totalmente artesanal, pensada para disfrutar cada detalle
+                </p>
+            </div>
+
+
+            <div class="separador">
+                <span><i class="fa-solid fa-wine-glass-empty"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCION 3 - PRODUCTOS ==================== -->
+    <section class="contenedorTarjeta">
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img class="avatar" src="img/LicorDurazno.png" alt="Avatar de perfil">
+
+                    <h2 class="tarjeta-name">Licor de Durazno</h2>
+                </div>
+
+                <p class="tarjeta-descripcion">
+                    Licor de durazno, dulce y aromático, con una textura suave y seductora.
+                    Perfecto para disfrutar frío o darle un toque frutal a tus tragos. 🍑
+                </p>
+
+                <h4>$299.99</h4>
+                <a href="#" class="btnCarrito">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </a>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img class="avatar" src="img/LicorLimon1.png" alt="Avatar de perfil">
+
+                    <h2 class="tarjeta-name">Licor de limón</h2>
+                </div>
+
+                <p class="tarjeta-descripcion">
+                    Licor artesanal de limón, vibrante y refrescante, con un equilibrio justo entre acidez y dulzura.
+                    para disfrutar bien frío y cerrar cualquier comida con un toque especial. 🍋
+                </p>
+
+                <h4>$320.99</h4>
+                <a href="#" class="btnCarrito">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </a>
+
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img class="avatar" src="img/LicorManzana.png" alt="Avatar de perfil">
+
+                    <h2 class="tarjeta-name">Licor de manzana</h2>
+                </div>
+
+                <p class="tarjeta-descripcion">
+                    Licor de manzana, ligero y frutado, con un sabor fresco y delicado.
+                    Una opción refrescante para disfrutar solo o en combinaciones suaves. 🍎
+                </p>
+
+                <h4>$250.99</h4>
+                <a href="#" class="btnCarrito">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar
+                </a>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>ACA VA TODO LA INFO DEL FOOTER DIVIDIDO EN TRES COLUMNAS</div>
+        <BR>
+        <BR>
+        <div class="footer-contenedor">
+
+            <div class="footer-bloque">
+                <h3>Contacto</h3>
+                <p>Licores artesanales hechos en familia.</p>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="footer-bloque">
+                <h3>Contacto</h3>
+                <p>Email: contacto@email.com</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div class="footer-bloque" style="text-align:right;">
+                <!--<h3>Redes</h3>
+                <p>Instagram | WhatsApp</p> -->
+                <img src="img/tarjetaQR.jpg" alt="QR" width="50%;">
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
