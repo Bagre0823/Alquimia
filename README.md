@@ -1,6 +1,21 @@
 # Alquimia
 DESCRIPCIÓN:
 - Este proyecto consiste en el desarrollo de una landing page, o web page, para un emprendimiento familiar de licores artesanales. El objetivo principal fue crear un sitio web simple, atractivo y adaptable a distintos dispositivos, que permita presentar los productos y transmitir la identidad artesanal del proyecto.
+  
+- Esta web permite:
+    •	Mostrar productos de forma organizada mediante tarjetas visuales. 
+    •	Mejorar la presencia digital del emprendimiento. 
+    •	Brindar una experiencia de usuario adaptable a distintos dispositivos (responsive). 
+    •	Aplicar buenas prácticas de desarrollo web (estructura, diseño y organización del código).
+  
+- Para visualizar este proyecto:
+    1.	Clonar o descargar el repositorio. 
+    2.	Abrir el archivo index.html en cualquier navegador. 
+    3.	Asegurarse de tener conexión a internet para cargar recursos externos como: 
+        o	Bootstrap 
+        o	Google Fonts 
+        o	Font Awesome 
+    También podés editar los archivos HTML y CSS para personalizar el contenido o el diseño.
 
 DESARROLLO:
 - Estructura base en HTML, organizando el contenido en secciones claras: encabezado, introducción, productos, recursos y pie de página.
